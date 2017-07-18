@@ -6,7 +6,7 @@ import { Input, Button, Message } from 'semantic-ui-react';
 
 class SimpleForm extends Component {
     locationInput({input, meta : {touched, error}, ...custom}) {
-        const hasError = touched && error != undefined;
+        const hasError = touched && error !== undefined;
         return (
             <div>
                 {hasError && <Message error header = 'Error' content={error}/>}
